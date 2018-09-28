@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- 实体类,简称 -设置别名 -->
+	<typeAliases>
+		<!-- 将com.lcvc.ebuytest3.model.Admin类重新起一个名字Admin，供mybatis的映射文件使用 -->
+		<typeAlias alias="Customer" type="com.bjbls.forum.model.Customer"/>
+	</typeAliases>
+
+	<mappers>
+		<!--注册adminMappe.xml文件 -->
+		<mapper resource="com/bjbls/forum/dao/mapper/CustomerMapper.xml"/>
+	    <!--<mapper resource="com/ljy/maven_github_ssm/dao/mapper/adminMapper.xml"/>-->
+	</mappers>
+
+
+</configuration>  
