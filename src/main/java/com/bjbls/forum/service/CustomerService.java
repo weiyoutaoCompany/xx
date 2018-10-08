@@ -25,4 +25,20 @@ public class CustomerService {
             return false;
         }
     }
+    /*
+    注册方法
+    @param username  账户名
+    @param password  密码
+     @return
+  */
+    public  boolean add(Customer customer){
+       customerDao.add(customer);
+       if (customer!=null){
+           return  true;
+       }else {
+           return  false;
+       }
+
+
+    }
 }

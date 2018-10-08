@@ -1,7 +1,9 @@
 package com.bjbls.forum.web.customer;
 
+import com.bjbls.forum.model.Customer;
 import com.bjbls.forum.service.CustomerService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -31,4 +33,20 @@ public class CustomerController {
     return  map;
 
     }
+    //注册
+    @ResponseBody
+    @RequestMapping(value = "/add")
+    public  Map<String,Integer>  add(ModelMap map,Customer customer){
+
+        Map<String,Integer> map1=new HashMap<>();
+        if (customerService.add(customer)){
+
+            map1.put("status", 1);
+
+        }else {
+            map1.put("status", -1);
+        }
+        return  map1;
+    }
+
 }
