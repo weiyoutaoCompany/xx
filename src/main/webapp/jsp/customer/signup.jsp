@@ -30,8 +30,8 @@
                             alert("注册成功");
                             $("#cuswin").html("欢迎你注册论坛，请登录!");
                             location.href="<%=basePath%>jsp/customer/login.jsp";
-                        }else{
-                            alert("注册失败!");
+                        } else {
+                            alert("注册失败!用户名已存在!");
                         }
                     });
             })

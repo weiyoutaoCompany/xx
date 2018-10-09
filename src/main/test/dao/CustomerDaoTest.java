@@ -44,4 +44,14 @@ public class CustomerDaoTest extends SpringJunitTest{
        customerDao.add(customer);
 
     }
+    @Test
+    public void addCsTest(){
+        String username="a";
+        customerDao.addCs(username);
+    }
+
+
+
+
+
 }

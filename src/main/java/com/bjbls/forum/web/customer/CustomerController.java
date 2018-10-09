@@ -37,16 +37,16 @@ public class CustomerController {
     @ResponseBody
     @RequestMapping(value = "/add")
     public  Map<String,Integer>  add(Customer customer){
-
         Map<String,Integer> map=new HashMap<>();
 
-        if (customerService.add(customer)){
+              if ( customerService.add(customer)){
 
-            map.put("status", 1);
+                  map.put("status", 1);
 
-        }else {
-            map.put("status", -1);
-        }
+              }else {
+                  map.put("status", -1);
+              }
+
         return  map;
     }
 
@@ -65,4 +65,5 @@ public class CustomerController {
         }
         return  map;
     }
+
 }

@@ -32,9 +32,15 @@ public class CustomerService {
      @return
   */
     public  boolean add(Customer customer) {
-        customerDao.add(customer);
+      //  customerDao.add(customer);
+        //先判断customer不为空，再把用户名传进去如果不为0，说明有相同的用户名存在,当通过后在进行注册
         if (customer != null) {
-            return true;
+        if (customerDao.addCs(customer.getUsername())==0){
+
+            customerDao.add(customer);
+            return  true;
+        }
+            return false;
         } else {
             return false;
         }
@@ -61,15 +67,6 @@ public class CustomerService {
   @param password  密码
    @return
 */
-    public  boolean addcs(String username){
-        customerDao.addcs(username);
-        if (username!=null) {
-            return true;
-        } else {
 
-            return false;
-        }
-
-    }
 
 }

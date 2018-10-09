@@ -25,7 +25,7 @@ public interface CustomerDao {
 	 */
     Customer get(int id);
 
-    Customer addcs(String username);
+    int addCs(String username);
 
     /*
 	将账户信息存入账户表中
