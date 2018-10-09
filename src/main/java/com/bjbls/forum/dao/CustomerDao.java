@@ -25,10 +25,16 @@ public interface CustomerDao {
 	 */
     Customer get(int id);
 
+    Customer addcs(String username);
+
     /*
 	将账户信息存入账户表中
 	@param admin 账户信息，注意表中的非空字段不能为空
 	@return 添加了几条记录信息
 	 */
     int add(Customer customer);
+    /*
+    * */
+    int updatePassword(@Param(value = "password") String password, @Param(value = "id") Integer id);
+
 }

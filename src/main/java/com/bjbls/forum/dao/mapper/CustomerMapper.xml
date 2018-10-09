@@ -16,13 +16,17 @@
     <select id="get"  resultType="Customer">
         select * from customer where id=#{id}
     </select>
+    <!-- 处理注册检测账户名username操作 -->
+    <select id="addcs" resultType="Customer">
+      select count(id) from customer where username=#{username}
+    </select>
     <!-- 处理注册操作 -->
     <insert id="add">
           insert into customer(id,username,password,name)
           values(null,#{username},#{password},#{name})
     </insert>
-    <!-- 处理用户信息更新操作 -->
-    <update id="update">
-        update customer set password=#{pawword} WHERE  id=#{id}
+    <!-- 处理用户密码更新操作 -->
+    <update id="updatePassword">
+        update customer set password=#{password} WHERE  id=#{id}
     </update>
 </mapper>

@@ -31,14 +31,45 @@ public class CustomerService {
     @param password  密码
      @return
   */
-    public  boolean add(Customer customer){
-       customerDao.add(customer);
-       if (customer!=null){
-           return  true;
-       }else {
-           return  false;
-       }
-
+    public  boolean add(Customer customer) {
+        customerDao.add(customer);
+        if (customer != null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+     /*
+    更新密码方法
+    @param username  账户名
+    @param password  密码
+     @return
+  */
+    public  boolean updatePassword(String password,Integer id){
+        customerDao.updatePassword(password,id);
+        if (password != null) {
+            return true;
+        } else {
+            return false;
+        }
 
     }
+
+    /*
+  检测username是否重名方法
+  @param username  账户名
+  @param password  密码
+   @return
+*/
+    public  boolean addcs(String username){
+        customerDao.addcs(username);
+        if (username!=null) {
+            return true;
+        } else {
+
+            return false;
+        }
+
+    }
+
 }

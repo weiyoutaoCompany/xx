@@ -36,17 +36,33 @@ public class CustomerController {
     //注册
     @ResponseBody
     @RequestMapping(value = "/add")
-    public  Map<String,Integer>  add(ModelMap map,Customer customer){
+    public  Map<String,Integer>  add(Customer customer){
 
-        Map<String,Integer> map1=new HashMap<>();
+        Map<String,Integer> map=new HashMap<>();
+
         if (customerService.add(customer)){
 
-            map1.put("status", 1);
+            map.put("status", 1);
 
         }else {
-            map1.put("status", -1);
+            map.put("status", -1);
         }
-        return  map1;
+        return  map;
     }
 
+    //更新密码
+    @ResponseBody
+    @RequestMapping(value = "/updatePassword")
+    public  Map<String,Integer> updatePawword(String password,Integer id){
+        Map<String,Integer> map=new HashMap<>();
+
+        if (customerService.updatePassword(password,id)){
+
+            map.put("status", 1);
+
+        }else {
+            map.put("status", -1);
+        }
+        return  map;
+    }
 }
