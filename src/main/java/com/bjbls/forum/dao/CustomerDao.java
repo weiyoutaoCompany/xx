@@ -3,6 +3,8 @@ package com.bjbls.forum.dao;
 import com.bjbls.forum.model.Customer;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 public interface CustomerDao {
     	/*
 	 * 处理数据库的登录方法
@@ -36,5 +38,7 @@ public interface CustomerDao {
     /*
     * */
     int updatePassword(@Param(value = "password") String password, @Param(value = "id") Integer id);
+
+    List<Customer> readAll();
 
 }

@@ -5,6 +5,8 @@ import com.bjbls.forum.model.Customer;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Service
 public class CustomerService {
@@ -17,13 +19,24 @@ public class CustomerService {
    @param password  密码
    @return true表示登录成功，false表示登录失败
     */
-    public boolean login(String username,String password){
+    public boolean login(String username, String password){
         Customer customer=customerDao.login(username, password);
         if(customer!=null){
+
             return true;
         }else{
             return false;
         }
+    }
+    /*
+  登录获取
+  @param username  账户名
+  @param password  密码
+  @return true表示登录成功，false表示登录失败
+   */
+    public  Customer login1(String username,String password){
+        Customer customer=customerDao.login(username, password);
+        return customer;
     }
     /*
     注册方法
@@ -62,11 +75,27 @@ public class CustomerService {
     }
 
     /*
-  检测username是否重名方法
-  @param username  账户名
-  @param password  密码
-   @return
-*/
-
+    customer列表方法
+     @param username  账户名
+     @param password  密码
+      @return
+   */
+    public List<Customer> getCustomer(){
+        return  customerDao.readAll();
+    }
+      /*
+    customer删除方法
+   */
+    public  void  deleteCustomer(Integer id){customerDao.delete(id);}
+      /*
+    customer查询单条记录
+   */
+    public  Customer getCustomer(Integer id){
+        Customer customer=null;
+        if (id!=null){
+            customer=customerDao.get(id);
+        }
+        return customer;
+    }
 
 }

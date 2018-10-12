@@ -12,10 +12,9 @@ public class CustomerServiceTest extends SpringJunitTest{
 
 @Test
 public void loginTest(){
-    System.out.println(customerService.login("admin","123"));
-    System.out.println(customerService.login("a","123456"));
+  System.out.println(customerService.login("admin","123"));
+  System.out.println(customerService.login("a","123456"));
 
 }
-
 
 }

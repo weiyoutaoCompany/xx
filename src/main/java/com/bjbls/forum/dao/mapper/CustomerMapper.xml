@@ -8,17 +8,18 @@
     <select id="login"  resultType="Customer">
         select * from customer where username=#{username} and password=#{password}
     </select>
-
+    
+    <!-- 删除用户操作 -->
     <delete id="delete" >
         delete from customer where id=#{id}
     </delete>
-
+    <!--编辑操作，根据id查询单个用户的所有信息操作,在把信息传到前台-->
     <select id="get"  resultType="Customer">
         select * from customer where id=#{id}
     </select>
-    <!-- 处理注册检测账户名username操作 -->
+    <!-- 处理注册检测账户名username是否重复操作,返回0则是无，可以注册true，返回1则,中断注册返回false -->
     <select id="addCs" resultType="int">
-      select count(id) from customer where username=#{username}
+       select count(id) from customer where username=#{username}
     </select>
     <!-- 处理注册操作 -->
     <insert id="add">
@@ -29,4 +30,8 @@
     <update id="updatePassword">
         update customer set password=#{password} where  id=#{id}
     </update>
+    <!-- 读取所有的账号 -->
+    <select id="readAll" resultType="Customer">
+        select * from customer order by id asc
+    </select>
 </mapper>

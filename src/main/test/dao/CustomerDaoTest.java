@@ -30,11 +30,12 @@ public class CustomerDaoTest extends SpringJunitTest{
      */
     @Test
     public void getTest(){
-    Customer customer=customerDao.get(3);
+    Customer customer=customerDao.get(1);
     System.out.println(customer);
     customer=customerDao.get(1);
         System.out.println(customer);
     }
+    //像数据库插入数据如果Process finished with exit code 0，表示成功插入数据
     @Test
     public void addTest(){
        Customer customer=new Customer();
@@ -44,10 +45,12 @@ public class CustomerDaoTest extends SpringJunitTest{
        customerDao.add(customer);
 
     }
+    //测试查询username，返回1则有数据，返回0则无数据，通过
     @Test
     public void addCsTest(){
-        String username="a";
+        String username="admin5";
         customerDao.addCs(username);
+        System.out.println(customerDao.addCs(username));
     }
 
 
