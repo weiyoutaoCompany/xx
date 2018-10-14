@@ -14,7 +14,7 @@ button {
 
 /* 登录样式 */
 .signin {
-	background-image: url("../images/system/bg.png");
+	background-image: url("../img/system/bg.png");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: top center;
@@ -56,13 +56,13 @@ button {
 	padding: 9px 40px;
 }
 .signin .container input.phone {
-	background-image: url(../images/phone.png);
+	background-image: url(../img/phone.png);
 }
 .signin .container input.password {
-	background-image: url(../images/password.png);
+	background-image: url(../img/password.png);
 }
 .signin .container input.captcha {
-	background-image: url(../images/code.png);
+	background-image: url(../img/code.png);
 	display: inline-block;
 	margin-right: 8px;
 	padding-right: 10px;
