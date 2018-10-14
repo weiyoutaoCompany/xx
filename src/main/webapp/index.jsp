@@ -15,7 +15,7 @@
 <div id=whole>
     <div class="top">
         <div class="wrap">
-            <div class="top-l left">欢迎光临Secretly论坛，<c:if test="${customer!=null }">${customer.name}</c:if>
+            <div class="top-l left">欢迎光临Secretly论坛，<c:if test="${customer!=null }">${customer.name}&nbsp;<a href="<%=basePath%>customer/deletecus">退出</a></c:if>
 <c:if test="${customer==null }">请
                 <a href="<%=basePath%>customer/login1" class="top-login">登录</a> <a href="<%=basePath%>customer/signup">免费注册</a>
                 </c:if></div>

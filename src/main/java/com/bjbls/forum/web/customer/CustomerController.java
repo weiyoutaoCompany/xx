@@ -109,4 +109,11 @@ public class CustomerController {
         customerService.getCustomer(id);
         return "/customer/customeredit.jsp";
     }
+    //删除session
+
+    @RequestMapping(value = "/deletecus")
+    public  String deleteid(HttpSession session){
+        session.removeAttribute("customer");
+        return "redirect:/index.jsp";
+    }
 }
