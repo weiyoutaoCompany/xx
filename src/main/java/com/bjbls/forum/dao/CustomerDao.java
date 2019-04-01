@@ -1,6 +1,8 @@
 package com.bjbls.forum.dao;
 
+
 import com.bjbls.forum.model.Customer;
+import com.bjbls.forum.model.Page;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -27,6 +29,7 @@ public interface CustomerDao {
 	 */
     Customer get(int id);
 
+
     int addCs(String username);
 
     /*
@@ -40,5 +43,8 @@ public interface CustomerDao {
     int updatePassword(@Param(value = "password") String password, @Param(value = "id") Integer id);
 
     List<Customer> readAll();
-
+    //更新用户信息
+    int update(Customer customer);
+    //查询记录实现分页
+    List<Customer> readCus(Page page);
 }

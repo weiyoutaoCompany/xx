@@ -259,6 +259,14 @@
       <artifactId>jjwt</artifactId>
       <version>${jjwt.version}</version>
     </dependency>
+    <!--kindeditor使用插件-->
+    <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+    <dependency>
+      <groupId>com.googlecode.json-simple</groupId>
+      <artifactId>json-simple</artifactId>
+      <version>1.1</version>
+    </dependency>
+
   </dependencies>
 
   <!--<dependencies>
@@ -316,4 +324,5 @@
       </plugins>
     </pluginManagement>
   </build>
+
 </project>

@@ -1,10 +1,19 @@
 package com.bjbls.forum.model;
 
+import java.util.Date;
+
 public class Customer {
     private Integer id;
     private String name;
     private String username;
     private String password;
+    private String images;
+    private Date time;
+    public Customer() {
+    }
+    public Customer(Integer id) {
+        this.id = id;
+    }
 
     public Integer getId() {
         return id;
@@ -36,5 +45,21 @@ public class Customer {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getImages() {
+        return images;
+    }
+
+    public void setImages(String images) {
+        this.images = images;
+    }
+
+    public Date getTime() {
+        return time;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
     }
 }
