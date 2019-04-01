@@ -6,66 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9759a47-ce68-420f-831a-281d94449827" name="Default" comment="完成了用户登录注销，制作后台的首页">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/forum_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/forum_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/forum_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/forum_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/forum.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjbls/forum/dao/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjbls/forum/dao/CustomerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjbls/forum/dao/mapper/CustomerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjbls/forum/dao/mapper/CustomerMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjbls/forum/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjbls/forum/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjbls/forum/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjbls/forum/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjbls/forum/web/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjbls/forum/web/customer/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjbls/forum/web/filter/LoginForAdminInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjbls/forum/web/filter/LoginForAdminInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bjbls/forum/web/system/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bjbls/forum/web/system/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dispatcherContext-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dispatcherContext-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/dao/CustomerDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/dao/CustomerDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/calendar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index_subpage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/layout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/mycss.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/sysmain.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/Cart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/accountGray.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/accountWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/addrs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/agreeGray.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/agreeOn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/asset.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/backTop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/code.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/email.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/home_sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/index_ubpage_logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/loginBg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/logozc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/order.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/password.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/password2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/scart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/timg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/top_background_image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jquery-1.8.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jquery-1.8.3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/customer/customeredit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/customer/customeredit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/customer/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/customer/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/customer/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/customer/loginerror.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/customer/loginsusccess.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/customer/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/customer/signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/customer/signuperror.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/customer/updatepassword.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/system/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/plugins/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/plugins/jquery.js" afterDir="false" />
+    <list default="true" id="c9759a47-ce68-420f-831a-281d94449827" name="Default" comment="再次上传">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -229,8 +171,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="409" />
-    <option name="y" value="47" />
+    <option name="x" value="457" />
     <option name="width" value="1157" />
     <option name="height" value="866" />
   </component>
@@ -388,7 +329,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -706,7 +647,7 @@
       <workItem from="1542103959872" duration="9125000" />
       <workItem from="1554092897673" duration="46000" />
       <workItem from="1554100367530" duration="1578000" />
-      <workItem from="1554101993490" duration="3829000" />
+      <workItem from="1554101993490" duration="4409000" />
     </task>
     <task id="LOCAL-00001" summary="完成了登录注册的验证和首页，登录页，注册页的功能">
       <created>1539352444685</created>
@@ -729,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539534642675</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="再次上传">
+      <created>1554106811682</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554106811682</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -765,7 +713,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262199000" />
+    <option name="totallyTimeSpent" value="262779000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -777,10 +725,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="240" y="51" width="1157" height="866" extended-state="0" />
-    <editor active="true" />
+    <frame x="457" y="0" width="1157" height="866" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23792161" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23792161" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -790,14 +737,14 @@
       <window_info id="Designer" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.114164904" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8222425" visible="true" weight="0.28825137" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8222425" weight="0.28825137" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49162862" weight="0.32647815" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32921347" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.17775752" side_tool="true" visible="true" weight="0.28825137" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5004558" side_tool="true" visible="true" weight="0.329235" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.4995442" visible="true" weight="0.329235" />
       <window_info anchor="bottom" id="Spring" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48394865" weight="0.32576618" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.35460347" weight="0.38251367" />
@@ -826,7 +773,8 @@
     <MESSAGE value="增加了列表页" />
     <MESSAGE value="完成了登录注册的验证和首页，登录页，注册页的功能" />
     <MESSAGE value="完成了用户登录注销，制作后台的首页" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了用户登录注销，制作后台的首页" />
+    <MESSAGE value="再次上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="再次上传" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bjbls/forum/dao/mapper/PageMapper.xml">
